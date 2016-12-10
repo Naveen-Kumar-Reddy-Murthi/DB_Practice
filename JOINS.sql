@@ -15,7 +15,7 @@
      While writin joing, precede column names with either table name or alias name of tables for faster access
 */
 
-      select e.first_name, e.salary, e.job_id, d.department_id, d.department_name, D.MANAGER_ID  from employees e, departments d
+      select e.first_name, e.salary, e.job_i d, d.department_id, d.department_name, D.MANAGER_ID  from employees e, departments d
       where e.department_id=d.department_id and rownum<10;
       
       select e.first_name,j.job_title, d.department_name, l.city,l.street_address,l.state_province,c.country_name, r.region_name 
